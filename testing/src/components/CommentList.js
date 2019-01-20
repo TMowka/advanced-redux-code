@@ -20,10 +20,10 @@ class CommentList extends Component {
   }
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   return {
     comments: state.comments
   };
-}
+};
 
 export default connect(mapStateToProps)(CommentList);
